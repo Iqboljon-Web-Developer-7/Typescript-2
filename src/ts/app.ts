@@ -143,6 +143,7 @@ function generateRnum(e: Event) {
       if (playersScore["first"] >= endOfGame) {
         result?.classList.remove("hidden");
         result?.classList.add("fade-in");
+        result!.style.display = "flex";
         winner!.textContent = gameInfo["p1"];
         winnerSound?.play();
       }
@@ -154,6 +155,8 @@ function generateRnum(e: Event) {
       if (playersScore["second"] >= endOfGame) {
         result?.classList.remove("hidden");
         result?.classList.add("fade-in");
+        result!.style.display = "flex";
+
         winner!.textContent = gameInfo["p2"];
         winnerSound?.play();
       }

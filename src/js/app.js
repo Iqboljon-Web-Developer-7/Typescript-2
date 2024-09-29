@@ -95,6 +95,7 @@ function generateRnum(e) {
             if (playersScore["first"] >= endOfGame) {
                 result === null || result === void 0 ? void 0 : result.classList.remove("hidden");
                 result === null || result === void 0 ? void 0 : result.classList.add("fade-in");
+                result.style.display = "flex";
                 winner.textContent = gameInfo["p1"];
                 winnerSound === null || winnerSound === void 0 ? void 0 : winnerSound.play();
             }
@@ -107,6 +108,7 @@ function generateRnum(e) {
             if (playersScore["second"] >= endOfGame) {
                 result === null || result === void 0 ? void 0 : result.classList.remove("hidden");
                 result === null || result === void 0 ? void 0 : result.classList.add("fade-in");
+                result.style.display = "flex";
                 winner.textContent = gameInfo["p2"];
                 winnerSound === null || winnerSound === void 0 ? void 0 : winnerSound.play();
             }
